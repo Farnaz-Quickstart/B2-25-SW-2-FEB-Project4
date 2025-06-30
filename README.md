@@ -11,6 +11,7 @@ Open the terminal in the client folder.
 npx create-react-app .                # Set up React app in the current folder
 npm install react-bootstrap bootstrap # Add Bootstrap
 npm install react-router-dom@latest   # Add React Router
+npm install axios
 ```
 
 ### Step 3, Set Up Server and Database
@@ -71,6 +72,13 @@ app.listen(4000, () => {
 });
 ```
 
-## Step 6, Set Up Git Repository for Project 4
+## Step 6: Enable ES Modules in Node.js
+Open the server/package.json file and add this line near the top level:
+
+```
+"type": "module",
+```
+
+## Step 7, Set Up Git Repository for Project 4
 Manually delete the hidden .git folder inside the client directory.
 This folder was created by create-react-app and should be removed to avoid Git conflicts.
